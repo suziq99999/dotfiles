@@ -8,6 +8,9 @@ export LC_ALL=en_US.UTF-8
 
 # エディタ
 export EDITOR=/usr/local/bin/vim
+alias vi=/Applications/MacVim.app/Contents/MacOS/Vim
+alias vim=/Applications/MacVim.app/Contents/MacOS/Vim
+
 
 # ページャ
 export PAGER=/usr/local/bin/vimpager
@@ -96,11 +99,11 @@ function vcs_prompt_info() {
 }
 # end VCS
 
-OK="^_^ "
-NG="X_X "
+#OK="^_^ "
+#NG="X_X "
 
-PROMPT=""
-PROMPT+="%(?.%F{green}$OK%f.%F{red}$NG%f) "
+#PROMPT=""
+#PROMPT+="%(?.%F{green}$OK%f.%F{red}$NG%f) "
 PROMPT+="%F{blue}%~%f"
 PROMPT+="\$(vcs_prompt_info)"
 #PROMPT+="
